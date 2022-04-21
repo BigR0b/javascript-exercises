@@ -1,4 +1,4 @@
-const palindromes = function (str) {
+const palindromes = (str) => {
  let noSpaceAndChars = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "");
  let newString = noSpaceAndChars.toLowerCase();
  let reverseStr = newString.split("").reverse().join("");
